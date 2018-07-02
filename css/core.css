@@ -1,0 +1,339 @@
+/*
+= = = = = =
+	Contents:
+	1. Base Styles
+	2. Header
+	3. Body
+	4. Footer
+	5. Grid
+	6. Breakpoints
+= = = = = =
+*/
+
+/*
+= = = = = =
+	1. Base Styles
+= = = = = =
+*/
+
+* {
+	font-family: roboto, sans-serif;
+}
+html {
+	background-color: #535257;
+	/*padding: 10px 8px 8px;*/
+}
+body {
+	background-color: #E5E5E5;
+	color: #535257;
+	/*border-radius: 16px;*/
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:16px 0 8px 0;
+	line-height: 1.5;
+}
+p {
+	margin: 0 0 8px 0;
+	line-height: 1.5;
+}
+.inner {
+	margin:0 auto;
+	padding: 0 16px;
+}
+
+.yolo { background-color: #FFC600; }
+
+/*
+= = = = = =
+	2. Header
+= = = = = =
+*/
+header {
+	background-color: #94BD00;
+	margin-bottom: 32px;
+	padding: 32px;
+	color: white;
+	text-shadow: 0 1px 4px #85a900;
+}
+header .nav { 
+	display: -webkit-box; 
+	display: -ms-flexbox; 
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	margin-right: 8px;
+}
+header .nav > * {
+	margin-right:16px;
+	line-height: 2rem;
+}
+.nav a {
+	color: white;
+	text-decoration: none;
+}
+.logo {
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+}
+
+/*
+= = = = = =
+	3. Body
+= = = = = =
+*/
+.card {
+	background-color: #FFF;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin: 0 auto 16px auto;
+	padding-bottom: 8px;
+}
+.card img {
+	width: 100%;
+	overflow: hidden;
+}
+
+/*
+= = = = = =
+	4. Footer
+= = = = = =
+*/
+
+footer {
+	background-color: #535257;
+	color: #535257;
+	padding: 32px;
+}
+
+/*
+= = = = = =
+	5. Grid
+	This is mobile-first, so the desktop grid structure is defined in section: '6. Breakpoints'
+= = = = = =
+*/
+
+@supports (display: grid) {
+/* 
+	code for newer browsers
+	including overrides of the code above, if needed
+*/
+	.block {
+		display: grid;
+		grid-gap: 16px;
+	    grid-template-columns: repeat(12, 1fr);
+		margin: 0 auto 16px auto;
+		max-width: 1200px;
+		padding: 0 8px;
+	}
+	.block .block { margin: 0 auto; padding: 0; }
+	.block-flush {
+		grid-gap: 0;
+	}
+	.flex-display { display: none; }
+	.spacer { display: none; } /* Hide an element in mobile views */
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { grid-column: span 12; }
+	.pattern__2-8-2, .pattern__3-6-3 { grid-column: span 12; }
+}
+
+
+/* Utility style used for visualizing grid items */
+.particle {
+	background-color: #cccccc;
+	min-height: 100px;
+	margin-bottom: 8px;
+}
+.breakpoint-tiny { display: block; } /* Sub-min-width 544 */
+.breakpoint-sm { display: none; } /* min-width 544 */
+.breakpoint-md { display: none; } /* min-width 768 */
+.breakpoint-lg { display: none; } /* min-width 1012 */
+.breakpoint-xl { display: none; } /* min-width 1280 */
+
+
+/* IE-SPECIFIC CODE - TARGETING IE 9 AND ABOVE */
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+	.block {
+		display: -ms-flexbox;
+		-ms-flex: 0 1 auto;
+		-ms-flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin: 0 auto 16px auto;
+		max-width: 1200px;
+	}
+	.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+		box-sizing: border-box;
+		-ms-flex: 0 0 auto;
+		-webkit-box-flex: 0;
+		flex: 0 0 auto;
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+	.col {
+		-webkit-flex-grow: 1;
+		-ms-flex-positive: 1;
+		-webkit-box-flex: 1;
+		flex-grow: 1;
+		-ms-flex-preferred-size: 0;
+		flex-basis: 0;
+		max-width: 100%;
+	}
+	.col-1 {
+		-ms-flex-preferred-size: 8.333%;
+		flex-basis: 8.333%;
+		max-width: 8.333%;
+	}
+
+	.col-2 {
+		-ms-flex-preferred-size: 16.667%;
+		flex-basis: 16.667%;
+		max-width: 16.667%;
+	}
+
+	.col-3 {
+		-ms-flex-preferred-size: 25%;
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
+	.col-4 {
+		-ms-flex-preferred-size: 33.333%;
+		flex-basis: 33.333%;
+		max-width: 33.333%;
+	}
+
+	.col-5 {
+		-ms-flex-preferred-size: 41.667%;
+		flex-basis: 41.667%;
+		max-width: 41.667%;
+	}
+
+	.col-6 {
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.col-7 {
+		-ms-flex-preferred-size: 58.333%;
+		flex-basis: 58.333%;
+		max-width: 58.333%;
+	}
+
+	.col-8 {
+		-ms-flex-preferred-size: 66.667%;
+		flex-basis: 66.667%;
+		max-width: 66.667%;
+	}
+
+	.col-9 {
+		-ms-flex-preferred-size: 75%;
+		flex-basis: 75%;
+		max-width: 75%;
+	}
+
+	.col-10 {
+		-ms-flex-preferred-size: 83.333%;
+		flex-basis: 83.333%;
+		max-width: 83.333%;
+	}
+
+	.col-11 {
+		-ms-flex-preferred-size: 91.667%;
+		flex-basis: 91.667%;
+		max-width: 91.667%;
+	}
+
+	.col-12 {
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.pattern__2-8-2, .pattern__3-6-3 {
+		box-sizing: border-box;
+		-ms-flex: 0 0 auto;
+		-webkit-box-flex: 0;
+		flex: 0 0 auto;
+		background-color: white;
+	}
+	.pattern__2-8-2 { margin-left: 16.667%; -ms-flex-preferred-size: 66.667%; flex-basis: 66.667%; max-width: 66.667%; }
+	.pattern__3-6-3 { margin-left: 25%; -ms-flex-preferred-size: 50%; flex-basis: 50%; max-width: 50%; }
+}
+/* //END// IE 9+ STYLES */
+
+.block-wide {
+	max-width: 100%;
+	padding: 0;
+}
+
+/*
+= = = = = =
+	6. Breakpoints:
+	- 544	Small screen / phone
+	- 768	Medium screen / tablet
+	– 1012	Large screen / desktop
+	- 1280	Extra large screen / wide desktop
+	* Adapted from GitHub's breakpoints:
+	* https://styleguide.github.com/primer/support/breakpoints/
+= = = = = =
+*/
+
+@media (min-width: 544px) {
+	.breakpoint-tiny { display: none; }
+	.breakpoint-sm { display: block; }
+	.breakpoint-md { display: none; }
+	.breakpoint-lg { display: none; }
+	.breakpoint-xl { display: none; }
+	@supports (display: grid) {
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { grid-column: span 12; }
+		.pattern__2-8-2, .pattern__3-6-3 { grid-column: span 12; }
+	}
+}
+@media (min-width: 768px) {
+	.breakpoint-tiny { display: none; }
+	.breakpoint-sm { display: none; }
+	.breakpoint-md { display: block; }
+	.breakpoint-lg { display: none; }
+	.breakpoint-xl { display: none; }
+	@supports (display: grid) {
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { grid-column: span 12; }
+	}
+}
+@media (min-width: 1012px) {
+	.breakpoint-tiny { display: none; }
+	.breakpoint-sm { display: none; }
+	.breakpoint-md { display: none; }
+	.breakpoint-lg { display: block; }
+	.breakpoint-xl { display: none; }
+
+	@supports (display: grid) {
+	
+		.col-1 { grid-column: span 1; }
+		.col-2 { grid-column: span 2; }
+		.col-3 { grid-column: span 3; }
+		.col-4 { grid-column: span 4; }
+		.col-5 { grid-column: span 5; }
+		.col-6 { grid-column: span 6; }
+		.col-7 { grid-column: span 7; }
+		.col-8 { grid-column: span 8; }
+		.col-9 { grid-column: span 9; }
+		.col-10 { grid-column: span 10; }
+		.col-11 { grid-column: span 11; }
+		.col-12 { grid-column: span 12; }
+
+		.pattern__2-8-2 { grid-column: 3 / 11; }
+		.pattern__3-6-3 { grid-column: 4 / 10; }
+
+		.spacer { display: block; } /* Show an element in desktop views */
+	}
+}
+@media (min-width: 1280px) {
+	.breakpoint-tiny { display: none; }
+	.breakpoint-sm { display: none; }
+	.breakpoint-md { display: none; }
+	.breakpoint-lg { display: none; }
+	.breakpoint-xl { display: block; }
+	.column-wide { max-width: 2000px; }
+}

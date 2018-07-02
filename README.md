@@ -6,6 +6,8 @@ GRIDkit is a starter kit for CSS Grid Layout. It's simple and mobile-first with 
 
 ## Structure
 
+GRIDkit uses **blocks** and **columns** to define a page.
+
 **Blocks** are similar to rows in other frameworks. They are containers for columns or groups of columns.
 
 The base block is set to a max-width of 1200px with a defined grid-gap.
@@ -16,6 +18,7 @@ There are two variations of the block element:
 - **block-wide** sets the max-width to 100%
 
 **Columns**
+
 GRIDkit is based on a 12 column grid. To define a column, use `col-n`, where 'n' = the number of columns you'd like to span. 
 
 col-1 = 1 column

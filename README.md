@@ -1,6 +1,6 @@
 # GRIDkit. A starter kit for CSS Grid Layout
 
-GRIDkit is a starter kit for CSS Grid Layout. It's simple and mobile-first with a Flexbox fallback for IE 10+*.
+GRIDkit is a starter kit for CSS Grid Layout. It's simple and mobile-first with a Flexbox fallback for IE 10+.
 
 [View a demo of GRIDkit](https://www.flow14.com/css-gridkit/).
 
@@ -37,5 +37,5 @@ There are two sample design patterns:
 
 ## Credits
 
-- * Uses bits of code from [flexboxgrid.com](http://flexboxgrid.com) for IE support (10+)
+- Uses bits of code from [flexboxgrid.com](http://flexboxgrid.com) for IE support (10+)
 

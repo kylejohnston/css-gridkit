@@ -136,6 +136,20 @@ footer {
 	.spacer { display: none; } /* Hide an element in mobile views */
 	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { grid-column: span 12; }
 	.pattern__2-8-2, .pattern__3-6-3 { grid-column: span 12; }
+
+	/* Maintain the grid columns in mobile views */
+	.block-mobile .col-1 { grid-column: span 1; }
+	.block-mobile .col-2 { grid-column: span 2; }
+	.block-mobile .col-3 { grid-column: span 3; }
+	.block-mobile .col-4 { grid-column: span 4; }
+	.block-mobile .col-5 { grid-column: span 5; }
+	.block-mobile .col-6 { grid-column: span 6; }
+	.block-mobile .col-7 { grid-column: span 7; }
+	.block-mobile .col-8 { grid-column: span 8; }
+	.block-mobile .col-9 { grid-column: span 9; }
+	.block-mobile .col-10 { grid-column: span 10; }
+	.block-mobile .col-11 { grid-column: span 11; }
+	.block-mobile .col-12 { grid-column: span 12; }
 }
 
 

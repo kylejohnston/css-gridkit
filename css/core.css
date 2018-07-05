@@ -298,18 +298,34 @@ footer {
 	padding: 0;
 }
 
-.center-vertical { 
+.align__center { 
 	display: grid;
 	align-content: center;
 }
-.center-horizontal {
+.justify__center {
 	display: grid;
 	justify-content: center;
 }
-.center-all {
+.center {
 	display: grid;
 	align-content: center;
 	justify-content: center;
+}
+.align__space-between {
+	display: grid;
+	align-content: space-between;
+}
+.align__space-around {
+	display: grid;
+	align-content: space-around;
+}
+.justify__space-between {
+	display: grid;
+	justify-content: space-between;
+}
+.justify__space-around {
+	display: grid;
+	justify-content: space-around;
 }
 
 /*

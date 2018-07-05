@@ -190,6 +190,9 @@ footer {
 		margin: 0 auto 16px auto;
 		max-width: 1200px;
 	}
+
+	.block .block { margin: 0 auto; }
+
 	.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
 		box-sizing: border-box;
 		-ms-flex: 0 0 auto;
@@ -293,6 +296,20 @@ footer {
 .block-wide {
 	max-width: 100%;
 	padding: 0;
+}
+
+.center-vertical { 
+	display: grid;
+	align-content: center;
+}
+.center-horizontal {
+	display: grid;
+	justify-content: center;
+}
+.center-all {
+	display: grid;
+	align-content: center;
+	justify-content: center;
 }
 
 /*

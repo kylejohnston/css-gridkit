@@ -30,11 +30,6 @@ There are two sample design patterns:
 - **pattern__3-6-3** creates a 6-column span, centered in the middle of the page
 - **pattern__2-8-2** creates an 8-column span, centered in the middle of the page
 
-## Roadmap
-
-- Add centering / justification styles
-- Add ordering styles
-
 ## Credits
 
 - Uses bits of code from [flexboxgrid.com](http://flexboxgrid.com) for IE support (10+)

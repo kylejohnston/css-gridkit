@@ -12,10 +12,11 @@ GRIDkit uses **blocks** and **columns** to define a page.
 
 The base block is set to a max-width of 1200px with a defined grid-gap.
 
-There are two variations of the block element:
+There are three variations of the block element:
 
 - **block-flush** sets the grid-gap to 0
 - **block-wide** sets the max-width to 100%
+- **block-mobile** maintains the column layout in mobile views
 
 **Columns**
 

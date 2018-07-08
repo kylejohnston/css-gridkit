@@ -148,7 +148,7 @@ footer {
 	    grid-template-columns: repeat(12, 1fr);
 		margin: 0 auto 16px auto;
 		max-width: 1200px;
-		padding: 0 8px;
+		padding: 0;
 	}
 	.block .block { margin: 0 auto; padding: 0; }
 	.block--flush {
@@ -306,6 +306,8 @@ footer {
 	max-width: 100%;
 	padding: 0;
 }
+
+.text__center { text-align: center; }
 
 .align__center { 
 	display: grid;

@@ -27,7 +27,7 @@
   	</header>
 
   	<div class="content">
-  		<div class="block">
+  		<div class="block spacer-6">
   			<div class="col-12">
   				<div class="breakpoint--tiny yolo">SUB-544 • TINY</div>
   				<div class="breakpoint--sm yolo">544 • SMALL</div>
@@ -36,7 +36,7 @@
   				<div class="breakpoint--xl yolo">1280 • X-LARGE</div>
   			</div>
   		</div>
-	  	<div class="block">
+	  	<div class="block spacer-6">
 	  		<div class="col-12"><p>Basic grid | <code>.block</code></p></div>
 	  		<div class="col-1"><div class="particle">1</div></div>
 	  		<div class="col-1"><div class="particle">2</div></div>
@@ -51,7 +51,7 @@
 	  		<div class="col-1"><div class="particle">11</div></div>
 	  		<div class="col-1"><div class="particle">12</div></div>
 	  	</div>
-	  	<div class="block block--flush">
+	  	<div class="block block--flush spacer-6">
 	  		<div class="col-12"><p>Flush grid (No grid gap) | <code>.block &plus; .block--flush</code></p></div>
 	  		<div class="col-1"><div class="particle">1</div></div>
 	  		<div class="col-1"><div class="particle">2</div></div>
@@ -66,14 +66,15 @@
 	  		<div class="col-1"><div class="particle">11</div></div>
 	  		<div class="col-1"><div class="particle">12</div></div>
 	  	</div>
-  		<div class="block block--mobile">
+  		<div class="block block--mobile spacer-6">
 		  		<div class="col-12"><p>Maintain the grid columns in mobile views | <code>.block &plus; .block--mobile</code></p></div>
 	  			<div class="col-3"><div class="inner yolo">1</div></div>
 	  			<div class="col-3"><div class="inner yolo">2</div></div>
 	  			<div class="col-3"><div class="inner yolo">3</div></div>
 	  			<div class="col-3"><div class="inner yolo">4</div></div>
   		</div>
-  		<div class="block">
+  		<div class="block spacer-6">
+	  		<div class="col-12"><p>Hide elements in mobile views | <code>.shim</code></p></div>
   			<div class="col-2 spacer shim">
   				<div class="particle">2 COLUMNS, HIDDEN ON MOBILE</div>
   			</div>
@@ -84,17 +85,17 @@
   				<div class="particle">4 COLUMNS</div>
   			</div>
   		</div>
-		<div class="block">
+		<div class="block spacer-6">
 			<div class="particle pattern__2-8-2">
 				<div class="inner">
 					<h2>Design pattern utility:</h2>
-					<p><strong>This block is centered on the page, spanning 8 columns (offset by 2 on each side).</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus tincidunt est id fringilla. In convallis commodo sem quisque cies…</p>
+					<p><strong>This block is centered on the page, spanning 8 columns (offset by 2 on each side).</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus tincidunt est id fringilla. <code>.pattern__2-8-2</code></p>
 				</div>
 			</div>
   		</div>
-  		<div class="block">
+  		<div class="block spacer-6">
   			<div class="particle pattern__3-6-3">
-				<p><strong>Another design pattern utility:</strong> this block is centered on the page, spanning 6 columns (offset by 3 on each side).</p>
+				<p><strong>Another design pattern utility:</strong> this block is centered on the page, spanning 6 columns (offset by 3 on each side). <code>.pattern__3-6-3</code></p>
 				<div class="block block--mobile">
 					<div class="particle col-3" style="background: #94BD00;">Nested 3</div>
 					<div class="particle col-3">Nested 3</div>
@@ -103,7 +104,7 @@
 				</div>
   			</div>
   		</div>
-  		<div class="block block--wide">
+  		<div class="block block--wide spacer-6">
 	  		<div class="particle col-12">
 	  			<h2 class="span-12"><div class="inner"></div></h2>
 		  		<div class="col-12">
@@ -122,7 +123,7 @@
 	  			</div>
 	  		</div>
 	  	</div>
-	  	<div class="block">
+	  	<div class="block spacer-6">
 	  		<div class="col-12">
 	  			<h2>STACKS ON STACKS</h2>
 	  			<p>A bunch of columns in a block that auto-wrap</p>
@@ -152,20 +153,20 @@
 	  		<div class="col-2"><div class="particle">23</div></div>
 	  		<div class="col-2"><div class="particle">24</div></div>
 	  	</div>
-	  	<div class="block">
-	  		<h2 class="col-12">4-column block, reverse order</h2>
+	  	<div class="block spacer-6">
+	  		<h2 class="col-12">4-column block, reverse order on mobile</h2>
 	  		<div class="col-3 order-4"><div class="particle">1</div></div>
 	  		<div class="col-3 order-3"><div class="particle">2</div></div>
 	  		<div class="col-3 order-2"><div class="particle">3</div></div>
 	  		<div class="col-3 order-1"><div class="particle">4</div></div>
 	  	</div>
-	  	<div class="block">
+	  	<div class="block spacer-6">
 	  		<h2 class="col-12">3-column block with centered elements</h2>
 	  		<div class="col-4"><div class="particle align__center"><span class="yolo">Center Vertical</span></div></div>
 	  		<div class="col-4"><div class="particle justify__center"><span class="yolo">Center Horizontal</span></div></div>
 	  		<div class="col-4"><div class="particle center"><span class="yolo">Center Both</span></div></div>
 	  	</div>
-	  	<div class="block">
+	  	<div class="block spacer-6">
 	  		<h2 class="col-12">2-column block</h2>
 	  		<div class="col-6"><div class="particle">1</div></div>
 	  		<div class="col-6"><div class="particle">2</div></div>

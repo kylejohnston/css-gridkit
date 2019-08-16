@@ -1,0 +1,140 @@
+/*
+= = = = = =
+	Contents:
+	1. Base Styles
+	2. Header
+	3. Body
+	4. Footer
+	5. Grid
+	6. Breakpoints
+= = = = = =
+*/
+
+/*
+= = = = = =
+	1. Base Styles
+= = = = = =
+*/
+
+* {
+	font-family: roboto, sans-serif;
+}
+html {
+	background-color: #535257;
+	/*padding: 10px 8px 8px;*/
+}
+body {
+	background-color: #E5E5E5;
+	color: #535257;
+	/*border-radius: 16px;*/
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:16px 0 8px 0;
+	line-height: 1.5;
+}
+p, li {
+	margin: 0 0 8px 0;
+	line-height: 1.5;
+}
+.inner {
+	margin:0 auto;
+	padding: 0 16px;
+}
+
+.yolo { background-color: #FFC600; }
+
+/*
+= = = = = =
+	2. Header
+= = = = = =
+*/
+header {
+	background-color: #94BD00;
+	margin-bottom: 32px;
+	padding: 32px;
+	color: white;
+	text-shadow: 0 1px 4px #85a900;
+}
+header .nav { 
+	display: -webkit-box; 
+	display: -ms-flexbox; 
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	margin-right: 8px;
+}
+header .nav > * {
+	margin-right:16px;
+	line-height: 2rem;
+}
+.nav a {
+	color: white;
+	text-decoration: none;
+}
+.logo {
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+}
+
+/*
+= = = = = =
+	3. Body
+= = = = = =
+*/
+.card {
+	background-color: #FFF;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin: 0 auto 16px auto;
+	padding-bottom: 8px;
+}
+.card img {
+	width: 100%;
+	overflow: hidden;
+}
+
+/*
+= = = = = =
+	4. Footer
+= = = = = =
+*/
+
+footer {
+	background-color: #535257;
+	color: #535257;
+	padding: 32px;
+}
+
+/*
+= = = = = =
+	5. Grid
+	This is mobile-first, so the desktop grid structure is defined in section: '6. Breakpoints'
+= = = = = =
+*/
+
+/*
+= = = = = =
+	6. Breakpoints:
+	- 544	Small screen / phone
+	- 768	Medium screen / tablet
+	– 1012	Large screen / desktop
+	- 1280	Extra large screen / wide desktop
+	* Adapted from GitHub's breakpoints:
+	* https://styleguide.github.com/primer/support/breakpoints/
+= = = = = =
+*/
+
+@media (min-width: 544px) {
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 1011px) {
+	@supports (display: grid) {
+}
+@media (min-width: 1012px) {
+}
+@media (min-width: 1280px) {
+}

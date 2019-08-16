@@ -1,4 +1,10 @@
 /*
+TO DO:
+- Remove vendor styles (should be handled by a preprocessor)
+- Create variables for base font size / spacing?
+*/
+
+/*
 = = = = = =
 	Contents:
 	1. Base Styles
@@ -54,24 +60,26 @@ header {
 	padding: 32px;
 	color: white;
 	text-shadow: 0 1px 4px #85a900;
-}
-header .nav { 
-	display: -webkit-box; 
-	display: -ms-flexbox; 
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	margin-right: 8px;
-}
-header .nav > * {
-	margin-right:16px;
-	line-height: 2rem;
-}
-.nav a {
-	color: white;
-	text-decoration: none;
+
+	.nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+			-ms-flex-flow: row wrap;
+				flex-flow: row wrap;
+		margin-right: 8px;
+
+		> * {
+			margin-right:16px;
+			line-height: 2rem;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+		}
+	}
 }
 .logo {
 	font-size: 48px;
@@ -90,10 +98,10 @@ header .nav > * {
 	border-bottom-right-radius: 5px;
 	margin: 0 auto 16px auto;
 	padding-bottom: 8px;
-}
-.card img {
-	width: 100%;
-	overflow: hidden;
+	img {
+		width: 100%;
+		overflow: hidden;
+	}
 }
 
 /*
